@@ -2,103 +2,124 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>1000 Estudios Bíblicos · App cristiana gratis</title>
-<meta name="description" content="Acércate más a Dios cada día: la Biblia Reina Valera 1960 sin internet, en audio, y más de 1000 estudios bíblicos. App gratis para Android con más de 500.000 descargas.">
-<meta property="og:title" content="1000 Estudios Bíblicos · App cristiana gratis">
-<meta property="og:description" content="La Biblia sin internet, más de 1000 estudios bíblicos, prédicas y devocionales. Gratis.">
-<meta property="og:image" content="https://1000estudiosbiblicos.com/img/hero.jpg">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>1000 Estudios Bíblicos · App cristiana gratis para Android</title>
+<meta name="description" content="Más de 1000 estudios bíblicos y la Biblia Reina Valera 1960 sin conexión, en una app gratuita para Android con más de 500.000 descargas.">
+<meta property="og:title" content="1000 Estudios Bíblicos · App gratuita para Android">
+<meta property="og:description" content="Más de 1000 estudios bíblicos y la Biblia, siempre contigo. Más de 500.000 descargas en Google Play.">
+<meta property="og:image" content="https://1000estudiosbiblicos.com/img/foto-02_devocional.jpg">
 <link rel="icon" href="img/icono.png">
-<link rel="preload" as="image" href="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/foto-02_devocional.jpg">
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2656790481450164');fbq('track','PageView');</script>
 <style>
-:root{--azul:#0d4f8b;--azul2:#0a3a68;--oro:#e8a630;--crema:#fbf6ec;--txt:#1d2a38;--mut:#5b6775}
+:root{--azul:#102E47;--azul2:#166A94;--crema:#F8F4EA;--oro:#D7B36D;--txt:#1c2a37;--mut:#566474;--linea:#e8dfcb;--serif:"Lora",Georgia,"Times New Roman",serif}
 *{box-sizing:border-box}
-body{margin:0;background:var(--crema);color:var(--txt);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-bottom:84px}
-.wrap{max-width:560px;margin:0 auto;padding:18px 16px 30px}
-.top{display:flex;align-items:center;gap:12px}
-.top img{width:64px;height:64px;border-radius:16px;box-shadow:0 6px 18px rgba(13,79,139,.25)}
-.top b{display:block;font-size:20px;color:var(--azul2);line-height:1.15}
-.top span{color:var(--mut);font-size:14px}
-h1{font-size:29px;line-height:1.12;margin:16px 0 6px;font-weight:850;letter-spacing:-.01em;text-wrap:balance}
-.lead{color:var(--mut);margin:0 0 10px}
-.social{background:#fff;border:1px solid #ecdfc6;border-radius:12px;padding:9px 12px;font-size:15px;font-weight:700;margin:10px 0 14px;text-align:center}
-.social i{color:var(--oro);font-style:normal;letter-spacing:1px}
-.btn{display:block;text-align:center;background:var(--azul);color:#fff;text-decoration:none;font-weight:850;font-size:20px;letter-spacing:.02em;padding:15px 18px 11px;border-radius:14px;box-shadow:0 8px 22px rgba(13,79,139,.35)}
-.btn small{display:block;font-weight:600;font-size:13px;letter-spacing:0;opacity:.9}
-.nota{text-align:center;color:var(--mut);font-size:13px;margin:7px 0 0}
-.car{position:relative;margin:20px 0 4px;border-radius:16px;overflow:hidden;background:#fff;aspect-ratio:16/10}
-.car .tr{display:flex;height:100%;transition:transform .6s ease;touch-action:pan-y}
-.car img{flex:0 0 100%;width:100%;height:100%;object-fit:contain;background:#f3ecdc}
-.dots{display:flex;justify-content:center;gap:6px;margin:8px 0 0}
-.dots b{width:8px;height:8px;border-radius:50%;background:#d8cdb6}.dots b.on{background:var(--azul)}
-ul.inc{list-style:none;padding:0;margin:18px 0;display:grid;gap:10px}
-ul.inc li{background:#fff;border-radius:12px;padding:12px 14px;border:1px solid #efe4cf;display:flex;gap:10px;align-items:flex-start}
-ul.inc b{display:block}
-.res{background:#fff;border-radius:14px;padding:16px;border:1px solid #efe4cf;margin:14px 0}
-.res .est{color:var(--oro);letter-spacing:2px}
-.res q{display:block;font-style:italic;font-size:18px;margin:6px 0}
-.res small{color:var(--mut)}
-h2{font-size:21px;margin:22px 0 4px}
-.fix{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(251,246,236,.96);border-top:1px solid #ecdfc6;transform:translateY(110%);transition:transform .3s}
-.fix.on{transform:none}.fix .btn{max-width:528px;margin:0 auto;font-size:18px;padding:13px}
-footer{text-align:center;color:var(--mut);font-size:12px;margin-top:22px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--crema);color:var(--txt);font:17.5px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+.wrap{max-width:560px;margin:0 auto;padding:16px 20px 28px}
+img{max-width:100%;display:block}
+.top{display:flex;align-items:center;gap:10px}
+.top img{width:44px;height:44px;border-radius:11px}
+.top b{font-size:17px;color:var(--azul)}
+.tag{display:inline-block;margin:22px 0 10px;font-size:12.5px;font-weight:800;letter-spacing:.09em;color:var(--azul2);background:#e5eef4;padding:5px 10px;border-radius:999px}
+h1{font-family:var(--serif);font-size:34px;line-height:1.12;margin:0 0 12px;color:var(--azul);text-wrap:balance}
+.lead{margin:0 0 18px;color:var(--mut)}
+.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:58px;background:var(--azul);color:#fff;text-decoration:none;font-weight:800;font-size:19px;border-radius:14px;padding:12px 16px;box-shadow:0 8px 20px rgba(16,46,71,.28)}
+.btn small{font-weight:600;font-size:12.5px;opacity:.85;margin-top:2px}
+.btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.prueba{display:flex;justify-content:center;gap:8px 16px;flex-wrap:wrap;margin:12px 0 0;font-size:14px;color:var(--mut)}
+.prueba b{color:var(--azul)}
+.foto{margin:24px -20px 0;position:relative}
+.foto img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.foto figcaption{position:absolute;left:20px;right:20px;bottom:14px;color:#fff;font-family:var(--serif);font-size:21px;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+h2{font-family:var(--serif);font-size:26px;line-height:1.18;color:var(--azul);margin:34px 0 14px;text-wrap:balance}
+.cards{display:grid;gap:12px}
+.card{background:#fff;border:1px solid var(--linea);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:112px 1fr}
+.card img{width:112px;height:100%;object-fit:cover;min-height:112px}
+.card div{padding:12px 14px}
+.card b{display:block;font-size:17px;color:var(--azul);margin-bottom:2px}
+.card span{font-size:15px;color:var(--mut)}
+.mas{margin:12px 0 0;font-size:15px;color:var(--mut)}
+.pasos{list-style:none;padding:0;margin:0;display:grid;gap:10px;counter-reset:p}
+.pasos li{counter-increment:p;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--linea);border-radius:14px;padding:12px 14px}
+.pasos li::before{content:counter(p);flex:0 0 30px;height:30px;border-radius:50%;background:var(--azul);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 6px}
+.gal img{flex:0 0 86%;scroll-snap-align:center;border-radius:12px;border:1px solid var(--linea)}
+.nota{font-size:13px;color:var(--mut);margin:8px 0 0}
+.res{background:#fff;border-left:4px solid var(--oro);border-radius:12px;padding:14px 16px;margin:0 0 10px}
+.res q{display:block;font-family:var(--serif);font-size:18px;line-height:1.4;color:var(--azul)}
+.res small{display:block;margin-top:6px;color:var(--mut)}
+.final{margin-top:34px;background:var(--azul);color:#fff;border-radius:20px;padding:24px 20px;text-align:center}
+.final h2{color:#fff;margin:0 0 8px}
+.final p{margin:0 0 16px;color:#d6e2ec}
+.final .btn{background:var(--oro);color:var(--azul);box-shadow:none}
+footer{text-align:center;color:var(--mut);font-size:12.5px;margin-top:24px;line-height:1.6}
+.fix{position:fixed;left:0;right:0;bottom:0;padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(248,244,234,.97);border-top:1px solid var(--linea);transform:translateY(120%);transition:transform .3s}
+.fix.on{transform:none}.fix .btn{max-width:520px;margin:0 auto;min-height:52px;font-size:17px}
+.ios{display:none;margin:10px 0 0;font-size:14px;background:#fff4dc;border-radius:10px;padding:8px 12px;color:#6b5113}
+@media (prefers-reduced-motion:reduce){.fix{transition:none}}
 </style>
 </head>
 <body>
 <main class="wrap">
-  <div class="top">
-    <img src="img/icono.png" alt="Ícono de 1000 Estudios Bíblicos" width="64" height="64">
-    <div><b>1000 Estudios Bíblicos</b><span>App cristiana gratuita para Android</span></div>
+  <div class="top"><img src="img/icono.png" alt="" width="44" height="44"><b>1000 Estudios Bíblicos</b></div>
+
+  <span class="tag">APP GRATUITA PARA ANDROID</span>
+  <h1>Más de 1000 estudios bíblicos y la Biblia, siempre contigo</h1>
+  <p class="lead">Lee la Reina Valera 1960 sin conexión, escucha la Biblia en audio y encuentra estudios, prédicas y devocionales para crecer en la Palabra de Dios.</p>
+
+  <a id="cta1" class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="hero">Descargar gratis en Google Play<small>Sin costo · se instala en segundos</small></a>
+  <p class="ios" id="ios">Esta app es para celulares Android. Si estás en iPhone, comparte esta página con alguien que tenga Android.</p>
+  <div class="prueba"><span><b>+500.000</b> descargas</span><span><b>★ 4,8</b> en Google Play</span><span><b>+4.000</b> opiniones</span></div>
+
+  <figure class="foto">
+    <img src="img/foto-02_devocional.jpg" alt="Mujer leyendo la Biblia junto a la ventana" width="1080" height="589">
+    <figcaption>Un momento con Dios cada día, donde estés.</figcaption>
+  </figure>
+
+  <h2>Todo lo que necesitas para estudiar la Palabra</h2>
+  <div class="cards">
+    <div class="card"><img src="img/foto-01_biblia.jpg" alt="" loading="lazy"><div><b>Lee la Biblia sin internet</b><span>La Reina Valera 1960 completa en tu celular, aunque no tengas datos.</span></div></div>
+    <div class="card"><img src="img/foto-03_estudio.jpg" alt="" loading="lazy"><div><b>Profundiza con estudios y prédicas</b><span>Más de 1000 estudios, bosquejos e ilustraciones para prédicas y grupos.</span></div></div>
+    <div class="card"><img src="img/foto-05_familia.jpg" alt="" loading="lazy"><div><b>Dedica un momento a Dios cada día</b><span>Devocional «20 días con Dios», promesas por tema y recursos para compartir en familia.</span></div></div>
   </div>
+  <p class="mas">También: la Biblia en audio (con conexión), imágenes cristianas para WhatsApp, recursos para líderes, jóvenes, matrimonio y evangelismo.</p>
 
-  <h1>Acércate más a Dios cada día con la Biblia en tu celular</h1>
-  <p class="lead">Lee la Biblia Reina Valera 1960 aun sin internet, escúchala en audio y crece con más de 1000 estudios bíblicos.</p>
-  <div class="social"><i>★★★★★</i> 4,9 · más de 4.000 reseñas · +500.000 descargas</div>
+  <h2>Empieza en 3 pasos</h2>
+  <ol class="pasos">
+    <li>Toca «Descargar gratis» y se abre Google Play.</li>
+    <li>Instala la app: es gratuita y no pide tarjeta.</li>
+    <li>Abre la Biblia o elige un estudio para hoy.</li>
+  </ol>
 
-  <a id="cta1" class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="arriba">DESCARGAR GRATIS<small>Disponible en Google Play</small></a>
-  <p class="nota">Sin registro · Sin pagos</p>
-
-  <div class="car" id="car" aria-roledescription="carrusel">
-    <div class="tr">
-      <img src="img/hero.jpg" alt="Dos celulares con la app: la Santa Biblia Reina Valera 1960 y el menú" width="1100" height="619">
-      <img src="img/recursos.jpg" alt="Recursos de la app: estudios, prédicas, devocional y promesas" loading="lazy">
-      <img src="img/testimonio.jpg" alt="Reseña real en Google Play con 5 estrellas" loading="lazy">
-    </div>
+  <h2>Así se ve en Google Play</h2>
+  <div class="gal" aria-label="Imágenes de la ficha de Google Play">
+    <img src="img/play-03.jpg" alt="Biblia en texto y audio, y el menú de la app" loading="lazy" width="720" height="405">
+    <img src="img/play-04.jpg" alt="Extras dentro de la app" loading="lazy" width="720" height="405">
+    <img src="img/play-05.jpg" alt="Recursos para compartir" loading="lazy" width="720" height="405">
+    <img src="img/play-06.jpg" alt="Más recursos de la app" loading="lazy" width="720" height="405">
   </div>
-  <div class="dots" id="dots"><b class="on"></b><b></b><b></b></div>
+  <p class="nota">Desliza para ver más · imágenes publicadas en la ficha oficial.</p>
 
-  <ul class="inc">
-    <li>📖<span><b>La Biblia sin internet</b>Reina Valera 1960 completa para leer en cualquier lugar.</span></li>
-    <li>📚<span><b>Más de 1000 estudios bíblicos</b>Para entender la Palabra en un lenguaje simple y claro.</span></li>
-    <li>🎧<span><b>La Biblia en audio</b>Escúchala mientras viajas o trabajas (con conexión).</span></li>
-    <li>📅<span><b>Devocional «20 días con Dios»</b>Un plan de oración día por día.</span></li>
-  </ul>
+  <h2>Una app que ya superó las 500.000 descargas</h2>
+  <div class="res"><q>…la app mejor detallada y completa de educación y predicación del mensaje del Señor.</q><small>Opinión publicada en Google Play</small></div>
+  <div class="res"><q>…estoy aprendiendo a conocer más de Dios gracias por esta aplicación…</q><small>Opinión publicada en Google Play</small></div>
 
-  <div class="res"><div class="est">★★★★★</div><q>Estoy aprendiendo a conocer más de Dios. Gracias por esta aplicación.</q><small>Reseña en Google Play</small></div>
+  <section class="final">
+    <h2>Lleva la Palabra de Dios contigo</h2>
+    <p>Gratis, en tu Android, para leer, escuchar y estudiar cada día.</p>
+    <a class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="cierre">Descargar gratis en Google Play</a>
+  </section>
 
-  <h2>Y mucho más, gratis</h2>
-  <ul class="inc">
-    <li>🎤<span><b>Prédicas, bosquejos e ilustraciones</b>Recursos para pastores, líderes y jóvenes.</span></li>
-    <li>🌱<span><b>Promesas de Dios por tema</b>Para cada momento de tu vida.</span></li>
-    <li>🖼️<span><b>Miles de imágenes cristianas</b>Para compartir en WhatsApp y Facebook.</span></li>
-  </ul>
-
-  <div class="res"><div class="est">★★★★★</div><q>La app mejor detallada y completa de educación y predicación del mensaje del Señor.</q><small>Reseña en Google Play</small></div>
-
-  <a class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="abajo">DESCARGAR GRATIS<small>Más de 500.000 descargas en Google Play</small></a>
-  <footer>1000 Estudios Bíblicos · Imágenes ilustrativas.</footer>
+  <footer>Disponible para teléfonos Android. Algunas funciones, como el audio, requieren internet.<br>1000 Estudios Bíblicos · Soporte y privacidad en la <a href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE" style="color:inherit">ficha de Google Play</a>. Fotos ilustrativas.</footer>
 </main>
-<div class="fix" id="fix"><a class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="fijo">DESCARGAR GRATIS</a></div>
+<div class="fix" id="fix"><a class="btn cta" href="https://play.google.com/store/apps/details?id=com.mobincube.estudios_biblicos.sc_32BYNE&referrer=utm_source%3Dfacebook%26utm_medium%3Dlanding" data-pos="fijo">Descargar gratis</a></div>
 <script>
 document.querySelectorAll('a.cta').forEach(function(a){a.addEventListener('click',function(){try{if(window.fbq){fbq('trackCustom','ClicDescarga',{pos:a.dataset.pos});fbq('track','Lead');}}catch(e){}});});
-(function(){var c=document.getElementById('car'),t=c.querySelector('.tr'),d=document.querySelectorAll('#dots b'),n=d.length,i=0,x0=null,tm;
-function go(k){i=(k+n)%n;t.style.transform='translateX('+(-100*i)+'%)';d.forEach(function(b,j){b.classList.toggle('on',j===i)});}
-function auto(){clearInterval(tm);if(!matchMedia('(prefers-reduced-motion: reduce)').matches)tm=setInterval(function(){go(i+1)},4500);}
-c.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
-c.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null;auto();});
-auto();})();
-(function(){var f=document.getElementById('fix'),b=document.getElementById('cta1');if('IntersectionObserver'in window)new IntersectionObserver(function(e){f.classList.toggle('on',!e[0].isIntersecting)}).observe(b);})();
+if(/iPhone|iPad|iPod/.test(navigator.userAgent)){document.getElementById('ios').style.display='block';}
+(function(){var f=document.getElementById('fix'),b=document.getElementById('cta1');if('IntersectionObserver'in window)new IntersectionObserver(function(e){f.classList.toggle('on',!e[0].isIntersecting&&e[0].boundingClientRect.top<0)}).observe(b);})();
 </script>
 </body>
 </html>
