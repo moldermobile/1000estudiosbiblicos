@@ -32,7 +32,7 @@ h1{font-family:var(--serif);font-size:34px;line-height:1.12;margin:0 0 12px;colo
 .prueba{display:flex;justify-content:center;gap:8px 16px;flex-wrap:wrap;margin:12px 0 0;font-size:14px;color:var(--mut)}
 .prueba b{color:var(--azul)}
 .foto{margin:24px -20px 0;position:relative}
-.foto img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.foto img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
 .foto figcaption{position:absolute;left:20px;right:20px;bottom:14px;color:#fff;font-family:var(--serif);font-size:21px;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.55)}
 h2{font-family:var(--serif);font-size:26px;line-height:1.18;color:var(--azul);margin:34px 0 14px;text-wrap:balance}
 .cards{display:grid;gap:12px}
@@ -46,7 +46,7 @@ h2{font-family:var(--serif);font-size:26px;line-height:1.18;color:var(--azul);ma
 .pasos li{counter-increment:p;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--linea);border-radius:14px;padding:12px 14px}
 .pasos li::before{content:counter(p);flex:0 0 30px;height:30px;border-radius:50%;background:var(--azul);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
 .gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 6px}
-.gal img{flex:0 0 86%;scroll-snap-align:center;border-radius:12px;border:1px solid var(--linea)}
+.gal img{flex:0 0 86%;height:auto;scroll-snap-align:center;border-radius:12px;border:1px solid var(--linea)}
 .nota{font-size:13px;color:var(--mut);margin:8px 0 0}
 .res{background:#fff;border-left:4px solid var(--oro);border-radius:12px;padding:14px 16px;margin:0 0 10px}
 .res q{display:block;font-family:var(--serif);font-size:18px;line-height:1.4;color:var(--azul)}
@@ -77,7 +77,7 @@ footer{text-align:center;color:var(--mut);font-size:12.5px;margin-top:24px;line-
 
   <figure class="foto">
     <img src="img/foto-02_devocional.jpg" alt="Mujer leyendo la Biblia junto a la ventana" width="1080" height="589">
-    <figcaption>El mismo celular que te distrae puede ser tu momento con Dios.</figcaption>
+    <figcaption>Un momento con Dios cada día, donde estés.</figcaption>
   </figure>
 
   <section class="momento">
